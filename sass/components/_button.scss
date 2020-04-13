@@ -1,0 +1,83 @@
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    transition: all;
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all .3s;
+    position: relative;
+    font-size: 1.6rem;
+}
+
+/* .btn:hover {
+    transform: translateY(-.3rem);
+    -webkit-transform: translateY(-.3rem);
+    -moz-transform: translateY(-.3rem);
+    -ms-transform: translateY(-.3rem);
+    -o-transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
+} */
+
+.btn:active {
+    transform: translateY(-.1rem);
+    -webkit-transform: translateY(-.1rem);
+    -moz-transform: translateY(-.1rem);
+    -ms-transform: translateY(-.1rem);
+    -o-transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+}
+
+.btn--white {
+    background-color: $color-white;
+    color: $color-primary;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+.btn--white::after {
+    background-color: $color-white;
+}
+
+/* element to get bigger on hover */
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    -webkit-transform: scaleX(1.4) scaleY(1.6);
+    -moz-transform: scaleX(1.4) scaleY(1.6);
+    -ms-transform: scaleX(1.4) scaleY(1.6);
+    -o-transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn--animated {
+    animation: moveInBottom .5s ease-out .75s;
+    -webkit-animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
