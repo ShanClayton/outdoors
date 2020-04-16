@@ -248,6 +248,18 @@ body {
   -ms-transform: translateY(0);
   -o-transform: translateY(0); }
 
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    position: absolute; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
