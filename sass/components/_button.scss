@@ -41,6 +41,19 @@
     color: $color-primary-dark;
 }
 
+.btn--white::after {
+    background-color: $color-white;
+}
+
+.btn--blue {
+    background-color: $color-primary-light;
+    color: $color-white;
+}
+
+.btn--blue::after {
+    background-color: $color-primary-light;
+}
+
 .btn::after {
     content: "";
     display: inline-block;
@@ -62,10 +75,6 @@
     -o-transition: all .4s;
 }
 
-.btn--white::after {
-    background-color: $color-white;
-}
-
 /* element to get bigger on hover */
 .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
@@ -83,6 +92,7 @@
 }
 
 .btn-text {
+
     &:link,
     &:visited {
         font-size: $default-font-size;
@@ -97,7 +107,7 @@
         -moz-transition: all .2s;
         -ms-transition: all .2s;
         -o-transition: all .2s;
-}
+    }
 
     &:hover {
         background-color: $color-about-btn-hover;
@@ -108,14 +118,14 @@
         -moz-transform: translateY(-2px);
         -ms-transform: translateY(-2px);
         -o-transform: translateY(-2px);
-}
+    }
 
     &:active {
-       box-shadow: 0 .5rem 1rem rgba($color-black, .15);
-       transform: translateY(0);
-       -webkit-transform: translateY(0);
-       -moz-transform: translateY(0);
-       -ms-transform: translateY(0);
-       -o-transform: translateY(0);
-}
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
 }
