@@ -101,7 +101,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-image: linear-gradient(to right, #007A7A, #003F5A);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
@@ -177,7 +177,7 @@ body {
 
 .btn--white {
   background-color: #fff;
-  color: #55c57a; }
+  color: #003F5A; }
 
 .btn::after {
   content: "";
@@ -218,11 +218,11 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #55c57a;
+  color: #007A7A;
   font-weight: 400;
   display: inline;
   text-decoration: none;
-  border-bottom: 1px solid #55c57a;
+  border-bottom: 2px solid #003F5A;
   padding: 3px;
   transition: all .2s;
   -webkit-transition: all .2s;
@@ -231,7 +231,7 @@ body {
   -o-transition: all .2s; }
 
 .btn-text:hover {
-  background-color: #136f63;
+  background-color: #8FCCDF;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
@@ -281,7 +281,7 @@ body {
       -moz-transform: scale(1.05) translateY(-0.5rem);
       -ms-transform: scale(1.05) translateY(-0.5rem);
       -o-transform: scale(1.05) translateY(-0.5rem);
-      outline: 1rem solid #136f63;
+      outline: 1rem solid #003183;
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.6);
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
@@ -310,7 +310,7 @@ body {
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
-    background-image: linear-gradient(to left, #136f63, #7ed56f);
+    background-image: linear-gradient(to left, #00A4EC, #003F5A);
     -webkit-background-clip: text;
     color: transparent; }
   .feature-box:hover {
@@ -348,7 +348,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 122, 122, 0.8), rgba(0, 63, 90, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -377,7 +377,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 122, 122, 0.8), rgba(0, 63, 90, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   -webkit-transform: skewY(-7deg);
