@@ -3,11 +3,11 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 50rem;
+    height: 52rem;
 
     &__side {
         font-size: 2rem;
-        height: 50rem;
+        height: 52rem;
         transition: all .8s;
         -webkit-transition: all .8s ease;
         -moz-transition: all .8s;
@@ -104,6 +104,26 @@
 
         &--1 {
             background-image: linear-gradient(to right bottom, rgba($color-tours-left, .85), rgba($color-tours-left-bk, .85));
+        }
+    }
+
+    &__details {
+        padding: 3rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-light-grey-two;
+                }
+            }
         }
     }
 
