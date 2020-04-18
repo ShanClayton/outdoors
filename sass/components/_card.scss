@@ -65,22 +65,22 @@
         background-size: cover;
         height: 23rem;
         background-blend-mode: screen;
-        -webkit-clip-path:polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
 
         &--1 {
-           background-image: linear-gradient(to right bottom, $color-tours-left, $color-tours-left-bk),url(../img/nat-5.jpg);
-           
+            background-image: linear-gradient(to right bottom, $color-tours-left, $color-tours-left-bk), url(../img/nat-5.jpg);
+
         }
 
 
         &--2 {
-           background-image: url(../img/nat-5.jpg); 
+            background-image: url(../img/nat-5.jpg);
         }
 
         &--3 {
-           background-image: url(../img/nat-5.jpg); 
+            background-image: url(../img/nat-5.jpg);
         }
     }
 
@@ -93,10 +93,14 @@
         position: absolute;
         top: 12rem;
         right: 2rem;
+        width: 75%;
     }
 
     //card 1
     &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
 
         &--1 {
             background-image: linear-gradient(to right bottom, rgba($color-tours-left, .85), rgba($color-tours-left-bk, .85));
