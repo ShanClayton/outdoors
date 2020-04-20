@@ -6,23 +6,53 @@
     &__input {
         font-family: inherit;
         font-size: 1.5rem;
+        display: block;
+        color: inherit;
         border-radius: 3px;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         -ms-border-radius: 3px;
         -o-border-radius: 3px;
-        background-color: rgba($color-white, .5);
-        border: none
-}
+        background-color: rgba($color-primary-light, .2);
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        padding: 1.5rem 2rem;
 
-//use keyboard without a mouse always make form elements with form elements visible
-&__input:focus{
-    outline: none;
-    box-shadow: 0 1rem 2rem rgba($color-black, .1);
-    border-bottom: 3px solid $color-features-icon
-}
+        //use keyboard without a mouse always make form elements with form elements visible
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 3px solid $color-features-icon
+        }
+
+        &:focus:invalid{
+            border-bottom: 3px solid $color-tours-left;
+        }
+
+        // only works with safari and ff
+        &::-webkit-input-placeholder {
+            color: $color-dark-grey-one;
+        }
+    }
 
     &__label {
-
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
     }
+
+    //siblings use ~ if there are more you would like to control. not nested in input because always it has to be after input in order to be selected with sibling selector.
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+        -webkit-transform: translateY(-4rem);
+        -moz-transform: translateY(-4rem);
+        -ms-transform: translateY(-4rem);
+        -o-transform: translateY(-4rem);
+}
 }
