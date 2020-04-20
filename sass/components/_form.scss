@@ -1,0 +1,28 @@
+.form {
+    &__group:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &__input {
+        font-family: inherit;
+        font-size: 1.5rem;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        background-color: rgba($color-white, .5);
+        border: none
+}
+
+//use keyboard without a mouse always make form elements with form elements visible
+&__input:focus{
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba($color-black, .1);
+    border-bottom: 3px solid $color-features-icon
+}
+
+    &__label {
+
+    }
+}
