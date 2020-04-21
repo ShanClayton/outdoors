@@ -1,3 +1,4 @@
+.btn,
 .btn:link,
 .btn:visited {
     text-transform: uppercase;
@@ -19,6 +20,7 @@
 }
 
 .btn:hover {
+    
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba($color-black,.2);
 
@@ -28,7 +30,9 @@
         }
     }
 
-.btn:active {
+.btn:active,
+.btn:focus {
+    outline: none;
     transform: translateY(-.1rem);
     -webkit-transform: translateY(-.1rem);
     -moz-transform: translateY(-.1rem);
