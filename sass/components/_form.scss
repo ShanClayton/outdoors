@@ -26,7 +26,7 @@
             border-bottom: 3px solid $color-features-icon
         }
 
-        &:focus:invalid{
+        &:focus:invalid {
             border-bottom: 3px solid $color-tours-left;
         }
 
@@ -46,7 +46,7 @@
     }
 
     //siblings use ~ if there are more you would like to control. not nested in input because always it has to be after input in order to be selected with sibling selector.
-    &__input:placeholder-shown + &__label {
+    &__input:placeholder-shown+&__label {
         opacity: 0;
         visibility: hidden;
         transform: translateY(-4rem);
@@ -54,5 +54,21 @@
         -moz-transform: translateY(-4rem);
         -ms-transform: translateY(-4rem);
         -o-transform: translateY(-4rem);
-}
+    }
+
+
+
+    &__radio-group {
+        width: 48%;
+        display: inline-block;
+    }
+
+    &__radio-label {
+        font-size: $default-font-size;
+        cursor: pointer;
+    }
+
+    &__radio-button {
+        
+    }
 }

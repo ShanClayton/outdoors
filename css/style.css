@@ -512,6 +512,14 @@ body {
   -ms-transform: translateY(-4rem);
   -o-transform: translateY(-4rem); }
 
+.form__radio-group {
+  width: 48%;
+  display: inline-block; }
+
+.form__radio-label {
+  font-size: 1.6rem;
+  cursor: pointer; }
+
 .story {
   width: 80%;
   margin: 0 auto;
