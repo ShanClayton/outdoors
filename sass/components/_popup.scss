@@ -20,7 +20,8 @@
         display: table;
         overflow: hidden;
     }
-//aligning content side by side photo/text
+
+    //aligning content side by side photo/text
     &__left {
         width: 33.333333%;
         display: table-cell;
@@ -42,9 +43,15 @@
     &__text {
         font-size: 1.4rem;
         margin-bottom: 4rem;
-        //column layout
+        //columnlayout
         column-count: 2;
-        column-gap: 4rem; 
+        column-gap: 4rem;
         column-rule: 1px solid $color-primary-light;
+
+        //hyphens
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
     }
 }
