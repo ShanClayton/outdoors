@@ -48,6 +48,10 @@
         column-gap: 4rem;
         column-rule: 1px solid $color-primary-light;
 
+        -moz-column-count: 2;
+        -moz-column-gap: 4rem;
+        -moz-column-rule: 1px solid $color-primary-light;
+
         //hyphens
         hyphens: auto;
         -webkit-hyphens: auto;
