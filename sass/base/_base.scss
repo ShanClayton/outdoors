@@ -10,7 +10,7 @@ html {
     font-size: 62.5%; //defines what 1rem is. 1rem = 10px/16px = 62.5
     scroll-behavior: smooth;
     //media query for html
-
+ //if you were doing mobile first it would be lower to larger
     @include respond(tab-land) {
         font-size: 56.25%; // width <(less) than 1200? 1rem = 9px 9/16 = 56.25%
     }

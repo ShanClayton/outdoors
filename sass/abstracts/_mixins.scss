@@ -42,6 +42,8 @@ $breakpoint argument choices
 - big-desktop
 1-em = 16px 600/16
 */
+
+// ORDER in which media queries are applied: base + typography + general layout + grid + page layout + components
 //media query for html. em and rem are not affected by root font size setting 1em or 1rem is equal to whatever font size you set as your root
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {

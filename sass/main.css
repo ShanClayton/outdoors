@@ -1,3 +1,19 @@
+/*
+0-600px: Phone (max-width)
+600-900: Tablet portrait (max-width)
+900-1200px: Tablet landscape (max-width)
+1200-1800: is were normal styles apply
+1800px + : Big desktop (min-width)
+
+*/
+/*
+$breakpoint argument choices
+- phone
+- tab-port
+- tab-land
+- big-desktop
+1-em = 16px 600/16
+*/
 *,
 *::after,
 *::before {
@@ -10,6 +26,24 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
 }
 
 body {
